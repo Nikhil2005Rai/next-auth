@@ -1,7 +1,7 @@
 "use client"
 import React, { useState, useEffect } from 'react'
 import axios from "axios"
-import toast, { Toaster } from "react-hot-toast"
+import {toast} from "react-hot-toast"
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 
@@ -43,7 +43,6 @@ export default function SignupPage() {
 
   return (
     <div className='flex flex-col items-center justify-center min-h-screen py-2'>
-      <Toaster />
       <h1>{loading ? "Processing" : "Signup"}</h1>
       <hr />
       <label htmlFor="username">username</label>
